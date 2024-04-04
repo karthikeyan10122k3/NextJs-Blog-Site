@@ -21,7 +21,7 @@ export default function HomePage() {
           <p className="lead">
             For aspiring bloggers and seasoned writers alike, this platform
             offers a space tailored specifically for blog writers, providing
-            valuable resources, community support, and opportunities for growth.
+            valuable resources, community support, and opportunities for growth
           </p>
           <div className="d-grid gap-2 d-md-flex justify-content-md-start">
             <button
