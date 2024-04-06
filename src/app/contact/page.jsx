@@ -1,21 +1,23 @@
-"use client";
+
 import Image from "next/image";
-import "./contact.css"; // Import the CSS module
+import "./contact.css"; 
+
+export const metadata = {
+  title: "Contact Page ",
+  description: "Created for Bloggers",
+};
+
 
 export default function ContactUs() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-  };
+  
 
   return (
     <div className="container text-light">
       <div className="d-flex justify-content-center align-items-center">
         <div className="col-12 col-lg-6 col-xl-5">
           <h2 className="h1 mb-3">Contact Us</h2>
-          <form onSubmit={handleSubmit}>
+          <form >
             <div className="mb-3">
-              {/* Use the CSS module class */}
               <input
                 type="text"
                 className="form-control bgGray"
@@ -26,7 +28,6 @@ export default function ContactUs() {
               />
             </div>
             <div className="mb-3">
-              {/* Use the CSS module class */}
               <input
                 type="email"
                 className="form-control bgGray"
@@ -37,7 +38,6 @@ export default function ContactUs() {
               />
             </div>
             <div className="mb-3">
-              {/* Use the CSS module class */}
               <textarea
                 className="form-control bgGray"
                 id="message"
@@ -55,7 +55,6 @@ export default function ContactUs() {
         <div className="col-12 col-lg-6 col-xl-7">
           <div className="row justify-content-xl-center">
             <div className="col-12 col-xl-11">
-              {/* Image component */}
               <Image
                 src="/about.png"
                 className="img-fluid rounded"

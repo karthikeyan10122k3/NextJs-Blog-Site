@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "About Page ",
+  description: "Created for Bloggers",
+};
 export default function About() {
   return (
     <section className=" mt-3 ">
